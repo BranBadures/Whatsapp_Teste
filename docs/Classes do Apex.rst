@@ -9,7 +9,6 @@ Classes do apex constituintes da aplicação Whatsapp Core
    :maxdepth: 2
    :caption: Classes do Apex
    
-   
 
    Tecnico/Classes do Apex/AcaoMessenger
    Tecnico/Classes do Apex/ChatContent

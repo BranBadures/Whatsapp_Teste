@@ -9,21 +9,21 @@ O objeto contato do Falae é criado para ser a referência de um número de What
 +------------------------------+------------------------+-------------------------+
 |  Rótulo do Campo             | Nome do campo          | Tipo de Dado            |
 +==============================+========================+=========================+
-| Contato                      | flcore__Contact__c     | Pesquisa(Contato)	      |
+| Contato                      | flcore__Contact__c     | Pesquisa(Contato)       |
 +------------------------------+------------------------+-------------------------+
-| Criado por                   | CreatedById            | Pesquisa(Usuário)	      |
+| Criado por                   | CreatedById            | Pesquisa(Usuário)       |
 +------------------------------+------------------------+-------------------------+
-| Lead                         | flcore__Lead__c        | Pesquisa(Lead)	         |
+| Lead                         | flcore__Lead__c        | Pesquisa(Lead)          |
 +------------------------------+------------------------+-------------------------+
-| Nome de Origem               | flcore__NomeOrigem__c  | Texto(255)	             |
+| Nome de Origem               | flcore__NomeOrigem__c  | Texto(255)              |
 +------------------------------+------------------------+-------------------------+
-| Nome do Contato do Falae     | Name                   | Texto(80)	              |
+| Nome do Contato do Falae     | Name                   | Texto(80)               |
 +------------------------------+------------------------+-------------------------+
 | Numero                       | flcore__Numero__c      | Texto(255) (ID externo) |
 +------------------------------+------------------------+-------------------------+
 | Proprietário                 | OwnerId                | Pesquisa(Usuário,Grupo) |	
 +------------------------------+------------------------+-------------------------+
-| Última modificação feita por | LastModifiedById       | Pesquisa(Usuário)	      |
+| Última modificação feita por | LastModifiedById       | Pesquisa(Usuário)       |
 +------------------------------+------------------------+-------------------------+
 
     
@@ -36,19 +36,19 @@ O objeto conversa do Falae tem um registro para cada conversa de um contato do F
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
 |  Rótulo do Campo                  | Nome do campo                          | Tipo de Dado                                    |
 +===================================+========================================+=================================================+
-| Contato do Falae                  | flcore__ContatoFalae__c                | Pesquisa(Contato do Falae)		                    |
+| Contato do Falae                  | flcore__ContatoFalae__c                | Pesquisa(Contato do Falae)                      |
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
-| Criado por                        | CreatedById                            | Pesquisa(Usuário)		                             |
+| Criado por                        | CreatedById                            | Pesquisa(Usuário)                               |
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
-| Código da Conversa do Falae       | Name                                   | Numeração automática	                           |
+| Código da Conversa do Falae       | Name                                   | Numeração automática                            |
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
-| Parâmetro Falae                   | flcore__ParametroFalae__c              | Detalhes do mestre(Parâmetro Falae)		           |
+| Parâmetro Falae                   | flcore__ParametroFalae__c              | Detalhes do mestre(Parâmetro Falae)             |
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
 | Quantidade de Mensagens não Lidas | flcore__QuantidadeMensagensNaoLidas__c | Resumo da totalização (COUNT Mensagem do Falae) |
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
-| Status                            | flcore__Status__c                      | Lista de opções	                                |
+| Status                            | flcore__Status__c                      | Lista de opções                                 |
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
-| Última modificação feita por      | LastModifiedById                       | Pesquisa(Usuário)	                              |
+| Última modificação feita por      | LastModifiedById                       | Pesquisa(Usuário)                               |
 +-----------------------------------+----------------------------------------+-------------------------------------------------+
 
 
@@ -67,71 +67,71 @@ O objeto parâmetro Falae é um registro para os clientes entrarem em contato vi
 +------------------------------------------+---------------------------------------------------+----------------------------+
 |  Rótulo do Campo                         | Nome do campo                                     | Tipo de Dado               |
 +==========================================+===================================================+============================+
-| Aguardando QR Code                       | flcore__AguardandoQRCode__c                       | Caixa de seleção	          |
+| Aguardando QR Code                       | flcore__AguardandoQRCode__c                       | Caixa de seleção           |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| API de Comunicação                       | flcore__APIComunicacao__c                         | Fórmula (Texto)		          |
+| API de Comunicação                       | flcore__APIComunicacao__c                         | Fórmula (Texto)            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Ativo                                    | flcore__Ativo__c                                  | Caixa de seleção		         |
+| Ativo                                    | flcore__Ativo__c                                  | Caixa de seleção           |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Canal de Comunicação                     | flcore__CanalComunicacao__c                       | Fórmula (Texto)		          |
+| Canal de Comunicação                     | flcore__CanalComunicacao__c                       | Fórmula (Texto)            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Conectado                                | flcore__Conectado__c                              | Caixa de seleção	          |
+| Conectado                                | flcore__Conectado__c                              | Caixa de seleção           |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Criado por                               | CreatedById                                       | Pesquisa(Usuário)	         |
+| Criado por                               | CreatedById                                       | Pesquisa(Usuário)          |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Código de Autenticação                   | flcore__CodigoAutenticacao__c                     | Texto(100)	                |	
+| Código de Autenticação                   | flcore__CodigoAutenticacao__c                     | Texto(100)                 |	
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Data/Hora da Última Conexão (Ping)       | flcore__DataHoraUltimaConexao__c                  | Data/Hora		                |
+| Data/Hora da Última Conexão (Ping)       | flcore__DataHoraUltimaConexao__c                  | Data/Hora                  |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Ligar Novamente em:                      | flcore__LigarNovamente__c                         | Fórmula (Texto)		          |
+| Ligar Novamente em:                      | flcore__LigarNovamente__c                         | Fórmula (Texto)            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
 | Motivo de Desconexão                     | flcore__MotivoDesconexao__c                       | Área de texto longo(32768)	|
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Nome                                     | Name                                              | Texto(80)		                |
+| Nome                                     | Name                                              | Texto(80)                  |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Número                                   | flcore__Celular__c                                | Texto(40)		                |
+| Número                                   | flcore__Celular__c                                | Texto(40)                  |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Número completo | LastModifiedById       | flcore__NumeroCompleto__c	                        | Fórmula (Texto)	           |
+| Número completo | LastModifiedById       | flcore__NumeroCompleto__c	                        | Fórmula (Texto)           |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Número por Canal de Comunicação          | flcore__NumeroCanalComunicacao__c                 | Texto(255) 	               |
+| Número por Canal de Comunicação          | flcore__NumeroCanalComunicacao__c                 | Texto(255)                 |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Operadora                                | flcore__Operadora__c                              | Lista de opções		          |
+| Operadora                                | flcore__Operadora__c                              | Lista de opções            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Proprietário                             | OwnerId                                           | Pesquisa(Usuário,Grupo)	   |
+| Proprietário                             | OwnerId                                           | Pesquisa(Usuário,Grupo)    |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Quantidade de Mensagens Não Lidas        | flcore__QuantidadeMensagensNaoLidas__c            | Resumo da totalização	     |
+| Quantidade de Mensagens Não Lidas        | flcore__QuantidadeMensagensNaoLidas__c            | Resumo da totalização      |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Receber Confirmações das Mensagens       | flcore__ReceberConfirmacoesMensagens__c           | Caixa de seleção	          |
+| Receber Confirmações das Mensagens       | flcore__ReceberConfirmacoesMensagens__c           | Caixa de seleção           |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Receber Status de Conectividade (Ping)   | flcore__ReceberStatusConectividade__c             | Caixa de seleção	          |
+| Receber Status de Conectividade (Ping)   | flcore__ReceberStatusConectividade__c             | Caixa de seleção           |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Reenviar SMS em:                         | flcore__ReenviarSMS__c                            | Fórmula (Texto)		          |
+| Reenviar SMS em:                         | flcore__ReenviarSMS__c                            | Fórmula (Texto)            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Resposta da Integração                   | flcore__RespostaIntegracao__c                     | Área de texto longo(32768)	|
+| Resposta da Integração                   | flcore__RespostaIntegracao__c                     | Área de texto longo(32768) |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Resposta Padrão para Tipos Incompatíveis | flcore__RespostaPadraoTiposIncompativeis__c       | Texto(255)		               |
+| Resposta Padrão para Tipos Incompatíveis | flcore__RespostaPadraoTiposIncompativeis__c       | Texto(255)                 |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Senha Salesforce                         | flcore__SenhaSalesforce__c                        | Texto (criptografado)(100)	|
+| Senha Salesforce                         | flcore__SenhaSalesforce__c                        | Texto (criptografado)(100) |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| SMS                                      | flcore__SMS__c                                    | Texto(10)		                |
+| SMS                                      | flcore__SMS__c                                    | Texto(10)                  |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Status                                   | flcore__Status__c                                 | Lista de opções	           |
+| Status                                   | flcore__Status__c                                 | Lista de opções            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Status de Conectividade                  | flcore__StatusConectividade__c                    | Fórmula (Texto)	           |
+| Status de Conectividade                  | flcore__StatusConectividade__c                    | Fórmula (Texto)            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Tempo SMS                                | flcore__TempoSMS__c                               | Data/Hora	                 |
+| Tempo SMS                                | flcore__TempoSMS__c                               | Data/Hora                  |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Tempo Voz                                | flcore__TempoVoz__c                               | Data/Hora	                 |
+| Tempo Voz                                | flcore__TempoVoz__c                               | Data/Hora                  |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Tipo de autenticação                     | flcore__TipoAutenticacao__c                       | Lista de opções		          |
+| Tipo de autenticação                     | flcore__TipoAutenticacao__c                       | Lista de opções            |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Tipo de registro                         | RecordTypeId                                      | Tipo de registro		         |
+| Tipo de registro                         | RecordTypeId                                      | Tipo de registro           |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Usuário Responsável                      | flcore__UsuarioResponsavel__c                     | Pesquisa(Usuário)	         |
+| Usuário Responsável                      | flcore__UsuarioResponsavel__c                     | Pesquisa(Usuário)          |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Usuário Salesforce                       | flcore__UsuarioSalesforce__c                      | Texto(100)		               |
+| Usuário Salesforce                       | flcore__UsuarioSalesforce__c                      | Texto(100)                 |
 +------------------------------------------+---------------------------------------------------+----------------------------+
-| Última modificação feita por             | LastModifiedById                                  | Pesquisa(Usuário)	         |
+| Última modificação feita por             | LastModifiedById                                  | Pesquisa(Usuário)          |
 +------------------------------------------+---------------------------------------------------+----------------------------+
 
  
@@ -152,31 +152,31 @@ O objeto mensagem do Falae contém registrado todas as mensagens enviadas de uma
 +------------------------------+----------------------------------------+---------------------------------------+
 |  Rótulo do Campo             | Nome do campo                          | Tipo de Dado                          |
 +==============================+========================================+=======================================+
-| API de Comunicação           | flcore__APIComunicacao__c              | Lista de opções		                     |
+| API de Comunicação           | flcore__APIComunicacao__c              | Lista de opções                       |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Canal de Comunicação         | flcore__CanalComunicacao__c            | Lista de opções		                     |
+| Canal de Comunicação         | flcore__CanalComunicacao__c            | Lista de opções                       |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Conversa do Falae            | flcore__ConversaFalae__c               | Detalhes do mestre(Conversa do Falae)	|
+| Conversa do Falae            | flcore__ConversaFalae__c               | Detalhes do mestre(Conversa do Falae) |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Corpo                        | flcore__Corpo__c                       | Área de texto longo(60000)		         	|
+| Corpo                        | flcore__Corpo__c                       | Área de texto longo(60000)            |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Criado por                   | CreatedById                            | Pesquisa(Usuário)	                    |
+| Criado por                   | CreatedById                            | Pesquisa(Usuário)                     |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Código da Mensagem do Falae  | Name                                   | Numeração automática	                 |
+| Código da Mensagem do Falae  | Name                                   | Numeração automática                  |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Destino                      | flcore__Destino__c                     | Texto(255)		                          |
+| Destino                      | flcore__Destino__c                     | Texto(255)                            |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Direção                      | flcore__Direcao__c                     | Lista de opções	                      |
+| Direção                      | flcore__Direcao__c                     | Lista de opções                       |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Id Externo                   | flcore__IdExterno__c                   | Texto(255) (ID externo)		             |
+| Id Externo                   | flcore__IdExterno__c                   | Texto(255) (ID externo)               |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Nome de Origem               | flcore__NomeOrigem__c                  | Texto(255)		                          |
+| Nome de Origem               | flcore__NomeOrigem__c                  | Texto(255)                            |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Nome de Origem               | flcore__Origem__c                      | Texto(255)		                          |
+| Nome de Origem               | flcore__Origem__c                      | Texto(255)                            |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Status                       | flcore__Status__c                      | Lista de opções	                      |
+| Status                       | flcore__Status__c                      | Lista de opções                       |
 +------------------------------+----------------------------------------+---------------------------------------+
-| Última modificação feita por | LastModifiedById                       | Pesquisa(Usuário)	                    |
+| Última modificação feita por | LastModifiedById                       | Pesquisa(Usuário)                     |
 +------------------------------+----------------------------------------+---------------------------------------+
 
 

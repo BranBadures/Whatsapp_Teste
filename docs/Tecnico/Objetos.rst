@@ -13,9 +13,9 @@ O objeto contato do Falae é criado para ser a referência de um número de What
  +------------------------------+------------------------+-------------------------+
  | Criado por                   | CreatedById            | Pesquisa(Usuário)	      |
  +------------------------------+------------------------+-------------------------+
- | Lead                         | flcore__Lead__c        | Pesquisa(Lead)	      |
+ | Lead                         | flcore__Lead__c        | Pesquisa(Lead)	         |
  +------------------------------+------------------------+-------------------------+
- | Nome de Origem               | flcore__NomeOrigem__c  | Texto(255)	          |
+ | Nome de Origem               | flcore__NomeOrigem__c  | Texto(255)	             |
  +------------------------------+------------------------+-------------------------+
  | Nome do Contato do Falae     | Name                   | Texto(80)	              |
  +------------------------------+------------------------+-------------------------+

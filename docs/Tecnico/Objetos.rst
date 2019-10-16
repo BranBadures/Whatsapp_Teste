@@ -2,9 +2,9 @@
 Objetos Personalizados
 #################
 
-Contato do Whatsapp
+Contato do Falae
 -----------------------
-O objeto contato do whatsapp é criado para ser a referência de um número de whatsapp de um cliente.
+O objeto contato do Falae é criado para ser a referência de um número de Whatsapp de um cliente.
 
 .. image:: tabelaobjeto3.png
     :width: 400px
@@ -12,9 +12,9 @@ O objeto contato do whatsapp é criado para ser a referência de um número de w
     :align: center
     
 
-Conversa do Whatsapp
+Conversa do Falae
 -----------------------
-O objeto conversa do whatsapp tem um registro para cada conversa de um contato do whatsapp com um parâmetro do whatsapp.
+O objeto conversa do Falae tem um registro para cada conversa de um contato do Falae com um parâmetro do Falae.
 
 .. image:: tabelaobjeto2.png
     :width: 400px
@@ -24,14 +24,14 @@ O objeto conversa do whatsapp tem um registro para cada conversa de um contato d
 .. Important::
    Referências:
     Acionadores Apex:
-      -`ConversaWhatsapp_aiu`_
+      ConversaFalae_aiu
       
-      -`ConversaWhatsapp_biu`_
+      ConversaFalae_biu
 
 
-Parâmetro Whatsapp
+Parâmetro Falae
 -----------------------
-O objeto parâmetro whatsapp é um registro para os clientes entrarem em contato via Whatsapp.
+O objeto parâmetro Falae é um registro para os clientes entrarem em contato via Falae.
 
 .. image:: tabelaobjeto3.png
     :width: 400px
@@ -41,14 +41,14 @@ O objeto parâmetro whatsapp é um registro para os clientes entrarem em contato
 .. Important::
    Referências:
     Acionadores Apex:
-      -`ParametroWhatsapp_aiu`_
+      ParametroFalae_aiu
     Página Visualforce:
-      -`WAQrRequest`_
+      WAQrRequest
     
 
-Mensagem do Whatsapp
+Mensagem do Falae
 -----------------------
-O objeto mensagem do whatsapp contém registrado todas as mensagens enviadas de uma conversa, tanto do cliente para o parâmetro, quanto parâmetro para cliente.
+O objeto mensagem do Falae contém registrado todas as mensagens enviadas de uma conversa, tanto do cliente para o parâmetro, quanto parâmetro para cliente.
 
 .. image:: tabelaobjeto4.png
     :width: 400px
@@ -59,16 +59,6 @@ O objeto mensagem do whatsapp contém registrado todas as mensagens enviadas de 
 .. Important::
    Referências:
     Acionadores Apex:
-      -`MensagemWhatsapp_aiu`_
+      MensagemFalae_aiu
       
-      -`MensagemWhatsapp_biu`_
-
-
-.. _WAQrRequest : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/P%C3%A1ginas%20do%20Visualforce/P%C3%A1ginas%20do%20Visualforce.html#waqrrequest
-.. _SendWhatsappMessage : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/SendWhatsappMessenger.html?highlight=SendWhatsappMessage
-.. _ParametroWhatsapp_aiu : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/Acionadores.html?highlight=acionadores#parametrowhatsapp-aiu
-.. _ConversaWhatsapp_biu : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/Acionadores.html?highlight=acionadores#conversawhatsapp-biu
-.. _ConversaWhatsapp_aiu : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/Acionadores.html?highlight=acionadores#conversawhatsapp-aiu
-.. _SendWhatsappMessage : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/SendWhatsappMessenger.html?highlight=SendWhatsappMessage
-.. _MensagemWhatsapp_aiu : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/Acionadores.html?highlight=acionadores#mensagemwhatsapp-aiu
-.. _MensagemWhatsapp_biu : https://whatsapp-teste.readthedocs.io/en/latest/Tecnico/Acionadores.html?highlight=acionadores#mensagemwhatsapp-biu
+      MensagemFalae_biu

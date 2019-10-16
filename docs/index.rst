@@ -19,6 +19,7 @@ Bem vindo a documentação da aplicação salesforce "Falae Core". Neste documen
    
    
    Setup
+   Desinstalação.rst
    
 .. toctree::
     :maxdepth: 2
